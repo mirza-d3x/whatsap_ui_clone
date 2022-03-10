@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_ui_clonee/core/colors/colors.dart';
 import 'package:whatsapp_ui_clonee/presentation/screenmain_page.dart';
 
 void main() {
@@ -13,8 +14,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Whatsapp',
-      theme: ThemeData(backgroundColor: Colors.black),
-      home: ScreenMain(),
+      theme: ThemeData(
+        appBarTheme: const AppBarTheme(
+          color: greenColor,
+        ),
+        backgroundColor: whiteColor,
+      ),
+      home: const ScreenMain(),
     );
   }
 }
