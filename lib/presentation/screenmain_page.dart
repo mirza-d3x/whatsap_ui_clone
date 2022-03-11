@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:whatsapp_ui_clonee/core/colors/colors.dart';
 import 'package:whatsapp_ui_clonee/core/constants/constant.dart';
+import 'package:whatsapp_ui_clonee/presentation/calls/call_screen.dart';
+import 'package:whatsapp_ui_clonee/presentation/camera/camera_screen.dart';
+import 'package:whatsapp_ui_clonee/presentation/chats/screen_chats.dart';
+import 'package:whatsapp_ui_clonee/presentation/status/status_screen.dart';
 
 class ScreenMain extends StatelessWidget {
   const ScreenMain({Key? key}) : super(key: key);
@@ -12,7 +17,10 @@ class ScreenMain extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           elevation: 0,
-          title: const Text('Whatsapp'),
+          title: const Text(
+            'WhatsApp',
+            style: TextStyle(fontSize: 21),
+          ),
           actions: const [
             Icon(
               Icons.search,
@@ -41,6 +49,14 @@ class ScreenMain extends StatelessWidget {
               )
             ],
           ),
+        ),
+        body: const TabBarView(
+          children: [
+            ScreenCamera(),
+            ScreenChats(),
+            ScreenStatus(),
+            ScreenCalls(),
+          ],
         ),
       ),
     );

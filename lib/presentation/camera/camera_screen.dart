@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class ScreenCalls extends StatelessWidget {
-  const ScreenCalls({Key? key}) : super(key: key);
+class ScreenCamera extends StatelessWidget {
+  const ScreenCamera({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
           child: Icon(
-        Icons.call,
+        Icons.photo_camera,
         size: 200,
       )),
     );
