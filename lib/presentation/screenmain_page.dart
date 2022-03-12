@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:whatsapp_ui_clonee/core/colors/colors.dart';
 import 'package:whatsapp_ui_clonee/core/constants/constant.dart';
 import 'package:whatsapp_ui_clonee/presentation/calls/call_screen.dart';
