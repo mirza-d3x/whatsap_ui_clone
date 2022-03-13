@@ -1,6 +1,7 @@
 // name, profile, message, time
 class Data {
   var chats = {
+    
     0: [
       'Midlaj',
       'images/img_avatar_1.png',
